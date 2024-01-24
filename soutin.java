@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class soutin {
         public static void main(String[] args) {
-            System.out.println("Márkócicus <3");
+            System.out.println("hello world");
             String msg = "I'm happy today.";
             int a = 150;
             int o = 0226;
@@ -17,22 +17,25 @@ public class soutin {
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print("mi a kedvenc zened?: ");
+            System.out.print("Mi a kedvenc zened?: ");
             String zene = scanner.nextLine();
 
-            System.out.print("mi a kedvenc ételed?: ");
+            System.out.print("Mi a kedvenc ételed?: ");
             String etel = scanner.nextLine();
 
-            System.out.print("mi a kedvenc hobbitd?: ");
+            System.out.print("Mi a kedvenc hobbid?: ");
             String hobbi = scanner.nextLine();
 
-            System.out.print("mi a kedvenc filmed?: ");
+            System.out.print("Mi a kedvenc filmed?: ");
             String film = scanner.nextLine();
 
-            System.out.print("mi a kedvenc uticelod?: ");
+            System.out.print("Mi a kedvenc uticélod?: ");
             String ut = scanner.nextLine();
 
-            System.out.println(zene + etel + hobbi + film + ut);
+            System.out.println("A kedvenc zeneszámod: " + zene);
+            System.out.println("A kedvenc ételed: " + etel + ", hobbid: " + hobbi);
+            System.out.println("Kedvenc filmed: ");
+            System.out.println("Uticélod: " + ut);
         }
     }
 
