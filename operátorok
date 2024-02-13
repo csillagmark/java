@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class operatorok {
+    public static void main(String[] args) {
+        System.out.println("Helló komám!");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Adj meg egy stringet: ");
+        String string = scanner.nextLine();
+
+        System.out.print("Add meg az első chart: ");
+        char char1 = scanner.nextLine().charAt(0);
+
+        System.out.print("Add meg az második chart: ");
+        char char2 = scanner.nextLine().charAt(0);
+
+        System.out.print("Int: ");
+        int int1 = scanner.nextInt();
+
+        System.out.print("Int: ");
+        int int2 = scanner.nextInt();
+
+        System.out.print("Double: ");
+        double double1 = scanner.nextDouble();
+
+        System.out.print("Double: ");
+        double double2 = scanner.nextDouble();
+
+        String stringek = string + char1 + char2;
+        int intek = int1 / int2;
+        double doublek = double1 + double2;
+        double kivonas = int1 - double1;
+        double szoroz = int2 * double2;
+
+        System.out.println(stringek + " " + intek + " " + doublek + " " + kivonas+ " " + szoroz);
+    }
+}
