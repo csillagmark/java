@@ -1,0 +1,18 @@
+public class matek {
+    public static void main(String[] args) {
+        int szam1 = (int)(Math.random() * 200 + 1);
+        int szam2 = (int)(Math.random() * 200 + 1);
+        System.out.println(szam1 + " " + szam2);
+
+        System.out.println("A nagyobb szám: " + Math.max(szam1, szam2));
+        System.out.println("A kisebb szám: " + Math.min(szam1, szam2));
+        System.out.println("Az 1. szám nézetgyöke: " + Math.sqrt(szam1));
+        System.out.println("Az 2. szám nézetgyöke: " + Math.sqrt(szam2));
+        System.out.println("A két szám közötti különbség: " + Math.abs(szam1 - szam2));
+        System.out.println("Az 1. szám köbe: " + Math.pow(szam1, 3));
+        System.out.println("Az 2. szám köbe: " + Math.pow(szam2, 3));
+        System.out.println("A két szám hányadosának legközelebbi egészre kerekítése: " + Math.round(szam1/szam2));
+        System.out.println("A két szám hányadosának lefele kerekítése: " + Math.floor(szam1/szam2));
+        System.out.println("A két szám hányadosának felfelé kerekítése: " + Math.ceil(szam2/szam1));
+    }
+}
