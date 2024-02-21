@@ -1,0 +1,71 @@
+import java.util.Scanner;
+public class IFfeladat3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("1. szám: ");
+        int int1 = scanner.nextInt();
+
+        System.out.print("2. szám: ");
+        int int2 = scanner.nextInt();
+
+        System.out.print("3. szám: ");
+        int int3 = scanner.nextInt();
+
+        if(int1 > int2 && int1 > int3)
+        {
+            System.out.println("A három szám közül a nagyobb: " + int1);
+            if(int2 > int3)
+            {
+                System.out.println("A három szám közül a középső: " + int2);
+                System.out.println("A három szám közül a legkisebb: " + int3);
+            }
+            else
+            {
+                if(int3 > int2)
+                {
+                    System.out.println("A három szám közül a középső: " + int3);
+                    System.out.println("A három szám közül a legkisebb: " + int2);
+                }
+            }
+        }
+
+        if(int2 > int1 && int2 > int3)
+        {
+            System.out.println("A három szám közül a nagyobb: " + int2);
+            if(int1 > int3)
+            {
+                System.out.println("A három szám közül a középső: " + int1);
+                System.out.println("A három szám közül a legkisebb: " + int3);
+            }
+            else
+            {
+                if(int3 > int1)
+                {
+                    System.out.println("A három szám közül a középső: " + int3);
+                    System.out.println("A három szám közül a legkisebb: " + int1);
+                }
+            }
+        }
+
+        if(int3 > int1 && int3 > int2)
+        {
+            System.out.println("A három szám közül a nagyobb: " + int3);
+            if(int1 > int2)
+            {
+                System.out.println("A három szám közül a középső: " + int1);
+                System.out.println("A három szám közül a legkisebb: " + int2);
+            }
+            else
+            {
+                if(int2 > int1)
+                {
+                    System.out.println("A három szám közül a középső: " + int2);
+                    System.out.println("A három szám közül a legkisebb: " + int1);
+                }
+        
+            }
+        }    
+    }
+}
