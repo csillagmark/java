@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class IFfeladat2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Add meg a magasságod: ");
+        int magasság = scanner.nextInt();
+        if(magasság > 150 && magasság < 165)
+        {
+            System.out.println("S");
+        }
+        else
+        {
+            if(magasság >= 165 && magasság <= 175)
+            {
+                System.out.println("M");
+            }
+            else
+            {
+                if(magasság >= 175 && magasság <= 185)
+                {
+                    System.out.println("L");
+                }
+                else
+                {
+                    if(magasság > 185 && magasság < 195)
+                    {
+                        System.out.println("XL");
+                    }
+                    else
+                    {
+                        System.out.println("NO SIZE");
+                    }
+                }
+            }
+        }
+    }
+}
