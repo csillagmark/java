@@ -10,7 +10,7 @@ public class Szogek {
             case 0: System.out.println("null szög"); break;
             case 90: System.out.println("derékszög"); break;
             case 180: System.out.println("egyenes szög"); break;
-            case 360: System.out.println("teljes szög");
+            case 360: System.out.println("teljes szög"); break;
         }
 
         szam = szam % 360;
@@ -23,9 +23,13 @@ public class Szogek {
         {
             System.out.println("tompa szög");
         }
-        else if(szam > 180)
+        else if(szam > 180 && szam < 360)
         {
             System.out.println("homorú szög");
+        }
+        else
+        {
+            System.out.println("teljes szög");
         }
     }
 }
