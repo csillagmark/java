@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Szogek {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Adj meg egy szöget: ");
+        int szam = sc.nextInt();
+        
+        switch(szam){
+            case 0: System.out.println("null szög"); break;
+            case 90: System.out.println("derékszög"); break;
+            case 180: System.out.println("egyenes szög"); break;
+            case 360: System.out.println("teljes szög");
+        }
+
+        szam = szam % 360;
+
+        if(szam > 0 && szam < 90)
+        {
+            System.out.println("hegyes szög");
+        }
+        else if(szam > 90 && szam < 180)
+        {
+            System.out.println("tompa szög");
+        }
+        else if(szam > 180)
+        {
+            System.out.println("homorú szög");
+        }
+    }
+}
