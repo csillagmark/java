@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Dolgozat3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Add meg az egész számot: ");
+        int szam = sc.nextInt();
+
+        if(szam < 10 && szam > 90)
+        {
+            System.out.println("A szám nem helyes!");
+        }
+        if(szam >= 10 && szam <= 90)
+        {
+            if(szam % 3 == 0)
+            {
+                System.out.println("Fizz");
+            }
+            if(szam % 5 == 0)
+            {
+                System.out.println("Buzz");
+            }
+            if(szam % 3 == 0 && szam % 5 == 0)
+            {
+                System.out.println("FizzBuzz");
+            }
+            if(szam % 3 != 0 && szam % 5 != 0)
+            {
+                System.out.println(szam);
+            }
+        }
+    }
+}
