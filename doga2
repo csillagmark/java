@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Dolgozat2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Add meg a kör sugarát: ");
+        int r = sc.nextInt();
+
+        double terulet = 0;
+        terulet = Math.sqrt(r) * Math.PI;
+        System.out.println("A kör területe: " + String.format("%.2f", terulet) + " , A a kör kerekített területe: " + Math.round(terulet));
+    }
+}
