@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class ParosParatlanWhile {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Adj meg egy számot: ");
+        int number = sc.nextInt();
+
+        while(number > 0){
+            if(number % 2 == 0){
+                System.out.println("A megadott szám páros");
+            }
+            else{
+                System.out.println("A megadott szám páratlan");
+            }
+            System.out.print("Adj meg egy számot: ");
+            number = sc.nextInt();
+        }
+
+        do{
+            if(number % 2 == 0){
+                System.out.println("A megadott szám páros!");
+            }
+            else{
+                System.out.println("A megadott szám páratlan!");
+            }
+            System.out.print("Adj meg egy számot: ");
+            number = sc.nextInt();
+        }while(number > 0);
+    }
+}
