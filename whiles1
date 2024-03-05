@@ -1,0 +1,45 @@
+import java.util.Random;
+
+import javax.swing.text.Document;
+
+public class Whiles{
+    public static void main(String[] args) {
+        Random random = new Random();
+
+        int number1 = random.nextInt(100) + 1;
+        int number2 = random.nextInt(100) + 1;
+        System.out.println(number1 + " : " + number2);
+
+        int smaller = Math.min(number1, number2);
+        int larger = Math.max(number1, number2);
+
+        int i = smaller;
+        int szam = smaller - 1;
+        int sor = 0;
+        while(i <= larger)
+        {
+            System.out.print(szam+1 + " ");
+            i++;
+            szam++;
+            sor++;
+            if(sor == 10)
+            {
+                System.out.println();
+                sor = 0;
+            }
+        }
+
+        do{
+            System.out.print(szam+1 + " ");
+            i++;
+            szam++;
+            sor++;
+            if(sor == 10)
+            {
+                System.out.println();
+                sor = 0;
+            }
+        }while(i <= larger);
+
+    }
+}
