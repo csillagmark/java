@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Matrix {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Add meg az első méretet: ");
+        int szam1 = sc.nextInt();
+
+        System.out.print("Add meg az első méretet: ");
+        int szam2 = sc.nextInt();
+
+        int[][] t = new int[szam1][szam2];
+        for(int i = 0; i < szam1; i++)
+        {
+            for(int j = 0; i < szam2; j++)
+            {
+                t[i][j] = sc.nextInt();
+            }
+        }
+
+        for(int i = 0; i < szam1; i++)
+        {
+            for(int j = 0; i < szam2; j++)
+            {
+                System.out.print(t[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
