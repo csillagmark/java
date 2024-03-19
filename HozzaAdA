@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class HozzaAdA {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] t = {"koal", "pand", "zebr", "anacond", "bo", "chinchill", "cobr", "gorill", "hyen", "hydr", "iguan", "impal", "pum", "tarantul", "piranh"};
+
+        for(int i = 0; i < t.length; i++)
+        {
+            t[i] += "a";
+        }
+
+        for(int i = 0; i < t.length; i++)
+        {
+            System.out.println(t[i]);
+        }
+    }
+}
+
