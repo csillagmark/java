@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class fakto {
+    
+    public static int add(int a) {
+        int osszeg = 1;
+        for(int i = 1; i < a+1; i++)
+        {
+            osszeg = osszeg * i;
+        }
+        return osszeg;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Adj meg egy számot: ");
+        int szam = sc.nextInt();
+
+        int result = add(szam);
+        System.out.println("Az összeg: " + result);
+    }
+}
