@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Fibonacci {
+    
+    public static int add(int a) {
+        int num1 = 0;
+        int num2 = 1;
+        for(int i = 2; i < a+1; i++)
+        {
+            int num3 = num2 + num1;
+            num1 = num2;
+            num2 = num3;
+        }
+        return num1;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Adj meg egy számot: ");
+        int szam = sc.nextInt();
+
+        int result = add(szam);
+        System.out.println("Az összeg: " + result);
+    }
+}
